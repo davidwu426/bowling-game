@@ -1,0 +1,33 @@
+<h1>Bowling Simulator</h1>
+<div class="score-board">
+    <div>
+        <div class="frames-container">
+            
+            <div class="frames" *ngFor="let x of frames; let i=index"> 
+                <div class="frame-index">{{i+1}}</div>
+                <div class="rolls-container">
+                    <div class="roll" *ngFor="let score of x">{{score}}</div>
+                </div> 
+            </div>
+        </div>
+        <div class="score-display-container">
+            <span class="total-score" *ngFor="let s of scores">
+                <span *ngIf="s>=0">{{s}}</span>
+            </span>
+        </div>
+    </div>
+    
+    <div *ngIf="!gameOver" class="score-input-container">
+        <div *ngIf="!validInput">Please enter a valid score</div>
+        <label>Please enter a score</label>
+        <input type="text" #score  (keydown.enter)="addRollToFrame(score.value)">
+        <button (click)="addRollToFrame(score.value)">Add</button>
+    </div>
+    
+    <div *ngIf="gameOver">
+        <button (click)="reset()">New Game</button>
+    </div>
+    
+</div>
+
+
