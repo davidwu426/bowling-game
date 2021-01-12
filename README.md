@@ -1,27 +1,16 @@
 # BowlingGame
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.3.
+This is a the front-end portion of a bowling game simulation developed using angular. It will ask user for inputs for each roll. After each frame is finished, it will display the result based on the rolled results.
 
-## Development server
+A list of possible inputs : [0-10, "X","Miss","Spare"]
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+To run this repo please follow the following steps : 
+  1. Clone the repo onto your local computer.
+  2. Cd onto this repo and run "npm start" to start the development server 
+  3. Go to localhost:4200 on a browser
+  
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+To Test this repo please follow the following steps:
+  1. cd onto this repo on your computer and run "ng test" to start the tests
+  
+  
